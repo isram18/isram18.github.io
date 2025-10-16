@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Awareness - Fact or Myth</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>🎗️ Breast Cancer Awareness<br><span style="font-size: 1.2rem; color: #D68EBA;">Fact or Myth</span></h1>
+            <div class="score-display">
+                <div class="current-score">Score: <span id="currentScore">0</span></div>
+                <div class="high-score">High Score: <span id="highScore">0</span></div>
+            </div>
+        </header>
+
+        <main class="game-main">
+            <div class="awareness-message">
+                <p>🎗️ Test your knowledge about breast cancer facts and myths. Early detection saves lives!</p>
+            </div>
+            <div class="round-info">
+                <span id="roundNumber">Round 1</span> of 10
+            </div>
+
+            <div class="question-container">
+                <div class="question" id="questionText">
+                    Loading question...
+                </div>
+            </div>
+
+            <div class="answer-buttons">
+                <button class="answer-btn fact-btn" id="factBtn">✅ FACT</button>
+                <button class="answer-btn myth-btn" id="mythBtn">❌ MYTH</button>
+            </div>
+
+            <div class="feedback" id="feedback"></div>
+        </main>
+
+        <div class="game-over" id="gameOver" style="display: none;">
+            <h2 id="gameOverTitle">Game Complete!</h2>
+            <div class="final-score">
+                <p>Your Score: <span id="finalScore">0</span></p>
+                <p id="scoreMessage"></p>
+            </div>
+            <div class="awareness-footer">
+                <p>🎗️ Remember: Regular self-exams and mammograms are crucial for early detection.</p>
+                <p>Consult your doctor for personalized screening recommendations.</p>
+            </div>
+            <button class="restart-btn" id="restartBtn">Play Again</button>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Loading questions...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
